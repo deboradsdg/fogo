@@ -138,8 +138,11 @@ try {
     $pdo->commit();
 
     // Redireciona de volta com feedback positivo
-    header('Location: index.php?msg=sucesso');
-    exit;
+    $origem = trim($_POST['origem'] ?? 'index');
+    $destino = ($origem === 'mapa') ? 'mapa.php?msg=sucesso' : 'index.php?msg=sucesso';
+
+    header('Location: ' . $destino);
+    exit;   
 
 } catch (Throwable $e) {
     if ($pdo->inTransaction()) {
