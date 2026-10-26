@@ -83,3 +83,15 @@ FOGO/
 ├── logout.php                  # Encerramento seguro de sessão
 ├── setup.php                   # Instalador e criador da base com dados de demonstração
 └── README.md                   # Documentação oficial do projeto
+
+## 🤖 Uso de Inteligência Artificial no Desenvolvimento
+
+No desenvolvimento do projeto **F.O.G.O.**, utilizou-se o modelo **Gemini (Google)** como ferramenta de assistência à programação, ideação arquitetural e apoio ao código (pair programming), com atuação expressiva em:
+
+* **Fase 2 (Centro de Operações & Georreferenciamento):**
+  * Apoio na estruturação da integração do **Leaflet.js** com a camada aberta do OpenStreetMap.
+  * Estruturação do endpoint de telemetria assíncrono em PHP (`api/telemetria.php`) e regras de renderização dinâmica de marcadores com filtros em JavaScript.
+
+* **Fase 3 (Inteligência Preditiva & Apoio à Decisão):**
+  * Colaboração na concepção algorítmica do **IVOR (Índice de Vulnerabilidade Operacional por Região)**, definindo pesos estatísticos para indisponibilidade, urgência de reparo e efetivo ativo.
+  * Formulação da lógica preditiva de risco de pane preventiva em 7 dias (`api/preditivo.php`) e geração explicável das recomendações táticas de despacho para os gestores do PROMETHEUS.
